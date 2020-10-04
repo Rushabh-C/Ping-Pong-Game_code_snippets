@@ -15,7 +15,7 @@ public class Ball implements Runnable{
     int p1Score, p2Score;
      
     //Paddle
-    Paddle p1 = new Paddle(15, 230, 1);
+    Paddle p1 = new Paddle(15, 230, 2);
     Paddle p2 = new Paddle(475, 230, 2);
     
     Rectangle ball;
@@ -74,7 +74,7 @@ public class Ball implements Runnable{
             setXDirection(-1);   
             p1Score++;
         }
-        if(ball.y <= 60)
+        if(ball.y <= 59)
             setYDirection(+1);
         
         if(ball.y >= 480)
